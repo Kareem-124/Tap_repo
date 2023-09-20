@@ -1,0 +1,237 @@
+:root {
+    --primaryColor: #D1884F;
+    --primaryColorOpacity50: #d1874f80;
+    --secondaryColor: #008AAA;
+    --secondaryColorLight: #89e3f71f;
+    --thirdColor: #3BBADB;
+    --thirdColorOpacity50: #3bbbdb78;
+    --backgroundColor: #ffffff;
+}
+
+.borderTest {
+    border: 0px solid black;
+}
+
+.font {
+    font-family: "Poppins";
+}
+
+.backgroundColor {
+    background-color: var(--backgroundColor);
+}
+
+.imageSize {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+.align {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.selected {
+    color: var(--primaryColor);
+    /* color: #D1884F; */
+
+}
+.navItem:hover a {
+    color: var(--primaryColor); 
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: var(--thirdColor);
+
+}
+
+li:hover, a:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+li a{
+    color:black
+}
+
+#items:hover {
+    color: #D1884F;
+    cursor: pointer;
+}
+
+.primaryColor {
+    color: var(--primaryColor);
+}
+
+.secColor {
+    color: var(--secondaryColor);
+}
+
+.thirdColor {
+    color: var(--thirdColor);
+}
+
+.fontLight {
+    font-weight: 100;
+}
+
+.containerBackgroundColor {
+    background-color: var(--secondaryColorLight);
+
+}
+
+.navMarginBottom {
+    margin-bottom: 5rem;
+}
+
+.customButton {
+    background-color: var(--secondaryColor);
+    border: 0.25rem solid var(--secondaryColor);
+    font-size: large;
+    color: white;
+    display: block;
+    width: 16rem;
+    height: auto;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 0px 3px 2px var(--thirdColorOpacity50);
+    text-decoration: none;
+}
+
+.customButton:hover {
+    border: 0.25rem solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    color:white;
+    box-shadow: 0px 3px 2px var(--primaryColorOpacity50);
+
+}
+
+.buttonContainer {
+    display: flex;
+
+}
+
+.customButtonProjects {
+    margin-left: 1rem;
+    background-color: white;
+    border: 0.15rem solid var(--thirdColor);
+    font-size: large;
+    color: var(--thirdColor);
+    display: block;
+    width: 16rem;
+    height: auto;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 0px 4px 2px var(--thirdColorOpacity50);
+    text-decoration: none;
+}
+
+.customButtonProjects:hover {
+    border: 0.15rem solid var(--primaryColor);
+    color: var(--primaryColor);
+    box-shadow: 0px 4px 2px var(--primaryColorOpacity50);
+}
+
+
+
+.collapsehover:hover {
+    background-color: var(--thirdColor);
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+.w-50 {
+    width: 50%;
+    
+}
+
+@media only screen and (max-width: 870px) {
+    #mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: center;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+@media only screen and (max-width: 590px) {
+.container{
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav{
+    font-size: large;
+    justify-content: center;
+}
+.navItem{
+    margin: 0px auto;
+}
+nav .container{
+    padding-left: 0;
+}
+}
+
+
+.navItem {
+    list-style: none;
+    margin-left: 2rem;
+    text-align: center;
+    align-items: center;
+    color: black;
+
+}
+
+.mr {
+    margin-right: 0.5rem;
+}
+.mt-5{
+    margin-top: 2.5rem;
+}
+.mb-5{
+    margin-bottom: 2.5rem;
+}
