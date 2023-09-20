@@ -7,49 +7,41 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="font">
-    <div class="container">
-        <nav class="backgroundColor navbar navbar-expand-sm navbar-light fs-3 mt-5 borderTest mb-5 ">
-            <div class="container-fluid">
+    <nav class="container">
 
-                <!-- Collapse the nav bar on small screens and show the burger mene icon -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav borderTest mb-2 mb-lg-0 ">
-                        <!-- Item: Home -->
-                        <li
-                            class="  nav-item me-5 d-flex justify-content-center align-items-center primaryColor fw-bold ">
-                            <i class=" bi bi-house-door-fill me-2 selected borderTest "></i>
-                            <a class="  text-decoration-none selected" href="#">Home</a>
-                        </li>
-                        <!-- Item About me-->
-                        <li class="  nav-item me-5 d-flex justify-content-center align-items-center items ">
-                            <i class=" bi bi-file-person me-2 "></i>
-                            <a class=" text-decoration-none" href="#">About Me</a>
-                        </li>
-                        <!-- Item Contact me -->
-                        <li class=" nav-item me-5 d-flex justify-content-center align-items-center items">
-                            <i class=" bi bi-telephone-fill me-2 "></i>
-                            <a class=" text-decoration-none" href="#">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+        <ul class="nav borderTest">
+            <li class="navItem d-flex justify-content-center " >
+                <svg class="selected mr" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                </svg>
+                <a class="selected">Home</a>
+            </li>
+            <li class="navItem d-flex justify-content-center " >
+                <svg class="mr" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                </svg>
+                <a >About Me</a>
+            </li>
+            <li class="navItem d-flex justify-content-center borderTest" >
+                <svg class="mr" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <a>Contact Me</a>
+            </li>
+        </ul>
+    </nav>
     <!-- Main container -->
-    <div class="container d-flex justify-content-center pt-5 containerBackgroundColor" id="mainContainer">
+    <div class="container d-flex justify-content-center pt-5 containerBackgroundColor mt-5" id="mainContainer">
         <!-- Article container -->
         <article class="borderTest w-50 d-flex flex-column ">
             <h3 class="mb-5 thirdColor fontLight">Welcome to my site</h3>
@@ -59,70 +51,33 @@
             <p class="fw-bold align">Hello, I'm Kareem Malhis, a dedicated Full Stack Developer with a strong passion
                 for crafting web solutions. My skill set spans a wide range of
                 technologies, including HTML, CSS, JavaScript, Bootstrap, jQuery, Python, Flask, Django, MySQL, and
-                SQLite. 
-                <a href="">See more...</a></p>
-                <p class="primaryColor fw-bold">Feel free to interact with the buttons below :)</p>
+                SQLite.
+                <a href="">See more...</a>
+            </p>
+
         </article>
         <!-- Image side -->
-        <div class="borderTest w-50 ">
-            <img class="img-fluid" src="/image/porfoilo.png" alt="an Image will be displayed here">
+        <div class="borderTest w-50 d-flex justify-content-end">
+            <img class="imageSize" src="/image/porfoilo.png" alt="TechImage">
 
         </div>
 
     </div>
-    <!-- Toggle buttons -->
-    <div class="container mt-5">
+
+    <div class="container mt-5 mb-5">
         <!-- buttons container to display then next to each others -->
         <div class="buttonContainer">
 
-            <button class="customButton" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Technologies Used In This Page
-            </button>
-            <button type="button" class="customButtonHireMe" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="customButton"  href="#HireMe">
                 Hire Me !
-            </button>
+        </a>
+            <a  class="customButtonProjects" href="#Projects">
+                See My Projects
+            </a>
         </div>
-        <!-- Collapsed Items -->
-        <div class="collapse mb-3 mt-3 " id="collapseExample">
-            <div class="card card-body mt-2 collapsehover">
-                HTML
-            </div>
-            <div class="card card-body mt-2 collapsehover">
-                CSS
-            </div>
-            <div class="card card-body mt-2 collapsehover">
-                Bootstrap Library
-            </div>
-        </div>
+
     </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hire me ! </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Thank you for being interested in hiring me please contact me at: Kareem.malhis@outlook.com
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="customButtonHireMe" data-bs-dismiss="modal">Done</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
 </html>
